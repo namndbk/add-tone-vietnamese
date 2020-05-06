@@ -1,8 +1,3 @@
-# import keras
-# from keras.models import Sequential, model_from_json
-# from keras.layers import Actiavtion, Dense, TimeDistributed, LSTM, Bidirectional
-# from keras.optimizers import Adam
-
 import numpy as np
 
 import utils
@@ -11,7 +6,7 @@ import json
 
 class CharacterModel(object):
 
-	def __init__(self, index_alphabet, maxlen=30):
+	def __init__(self, index_alphabet, maxlen=32):
 		self.index_alphabet = index_alphabet
 		self.maxlen = maxlen
 	
