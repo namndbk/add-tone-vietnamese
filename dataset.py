@@ -1,13 +1,15 @@
 import numpy as np
 import pandas as pd
+
 import pickle
 
 from preprocess import remove_accent
 
 from character import CharacterModel
 
-from config import MAXLEN
+import config
 
+MAXLEN = config.MAXLEN
 
 def load_data(file_path):
     df = pd.read_excel(file_path)
@@ -28,10 +30,8 @@ def generator(data, batch_size=128):
             if character.encode(data[index]) is not None:
                 X.append(character.encode(remove_accent(data[index])))
                 y.append(character.encode(data[index]))
-                index += 1
-                if index == n:
-                    index = 0
-            else:
-                continue
+            index += 1
+            if index == (n-1):
+                index = 0
         yield np.array(X), np.array(y)
         

@@ -21,17 +21,15 @@ def gen_ngrams_set(corpus, maxlen=32, ngr=5):
     phrases = itertools.chain.from_iterable(extract_phrases(text) for text in corpus)
     phrases = [p for p in phrases if len(p.split()) >= 2]
     print(len(phrases))
-    for phrase in phrases[0:5]:
+    for phrase in phrases:
         for ngram in gen_ngrams_from_text(phrase, ngr):
-            print(ngram)
             sent = " ".join(token for token in ngram)
             if len(sent) <= maxlen:
                 n = len(sent)
                 sent += "\x00" * (maxlen - n)
-                print(sent)
                 list_ngrams.append(sent)
     del phrases
-    print(list_ngrams[:2])
     list_ngrams = list(set(list_ngrams))
+    print(len(list_ngrams))
     shuffle(list_ngrams)
     return list_ngrams

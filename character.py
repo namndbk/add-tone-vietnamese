@@ -10,9 +10,9 @@ class CharacterModel(object):
 		self.index_alphabet = index_alphabet
 		self.maxlen = maxlen
 	
-	def encode(self, text, maxlen):
+	def encode(self, text):
 		try:
-			x = np.zeros((self.maxlen, len(self.alphabet)))
+			x = np.zeros((self.maxlen, len(self.index_alphabet)))
 			for i, c in enumerate(text[:self.maxlen]):
 				x[i, self.index_alphabet[c]] = 1
 			if i < self.maxlen - 1:
