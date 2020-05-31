@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 
 from dataset import *
-from process import gen_ngrams_set
+from process import gen_ngram_set
 
 
 import config
@@ -46,7 +46,7 @@ models = create_model(maxlen=MAXLEN, vocab_size=len(alphabet), units=HIDDEN_UNIT
 
 # data = load_data("data/test.xlsx")
 
-# ngrams = gen_ngrams_set(data, maxlen=MAXLEN, ngr=NGRAM)
+# ngrams = gen_ngram_set(data, maxlen=MAXLEN, ngr=NGRAM)
 
 # if (TRAIN_SIZE + VALIDATION_SIZE) > len(ngrams):
 #     train_set, validation_set = train_test_split(ngrams, test_size=0.2)

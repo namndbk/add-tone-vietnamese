@@ -1,0 +1,24 @@
+Input: thiếu tướng Mowaffaq Mohammed Dahham
+	Output: thiếu tướng mowaffaq mohammed đa
+==================================================
+	Input: Các nhà khoa học Đức vừa hoàn thành công việc sắp xếp bản đồ gen của Propionibacterium acnes
+	Output: các nhà khoa học đức vừa hoàn thành công việc sắp xếp bản đồ gen của propionibacterium acn
+==================================================
+	Input: Phát hiện trên giúp người ta hiểu rõ hơn về cơ chế gây bệnh của Propionibacterium acnes
+	Output: phát hiện trên giúp người ta hiểu rõ hơn về cơ chế gây bệnh của propionibacteri a
+==================================================
+	Input: tranh bóng bóng với Deco trong trận Atletico thắng Barcelona 2
+	Output: tránh bỗng bổng với deco trong trận atletico thắng barcel 2
+==================================================
+	Input: Chị Châu  Cháu Linh Đan
+	Output: chỉ cháu châu lĩnh dẫn
+==================================================
+	Input: Ngày ấy  Bây giờ
+	Output: ngày ấy bây giờ
+==================================================
+	Input: thành viên nhóm khảo sát của hãng kiểm toán PricewaterhouseCoopers
+	Output: thành viên nhóm khảo sát của hãng kiểm toán pricewaterhou
+==================================================
+	Input: thêm một phát biểu gây sốc của Tổng thống Mahmoud Ahmadinejad
+	Output: thêm một phát biểu gây sốc của tổng thống mahmoud ahmadinej
+==================================================
