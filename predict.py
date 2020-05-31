@@ -90,4 +90,5 @@ text2 = '''Trung Quoc da mo rong anh huong cua ho trong khu vuc thong qua cac bu
 gieng o Hoa Dong, Bien Dong, boi dap dao nhan tao va quan su hoa cac cau truc dia ly tren Bien Dong trai luat phap \
 quoc te; Tim cach chia re Hoa Ky khoi cac dong minh chau A thong qua cac no luc ep buoc va leo lai kinh te '''
 text3 = "cái nha rung lac vi anh em ba con nhay ram ram nhu muon sap."
-accent_sentence(text2)
+text4 = """"Bộ trưởng Quốc phòng Chetta Thanajaro khẳng định"""
+accent_sentence(text4)
