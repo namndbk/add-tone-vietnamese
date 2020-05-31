@@ -56,7 +56,7 @@ class ToneModel(object):
             assert e
         return output
 
-    def add_tone_v2(self, sentence):
+    def add_tone(self, sentence):
         y_true = 0
         y_pred = 0
         index = 0
@@ -123,4 +123,4 @@ if __name__ == "__main__":
     weights_file = "models/modelv2/best_model_v2.hdf5"
     alphabet_file = "idxabc.pickle"
     model = ToneModel(config, model_file, weights_file, alphabet_file)
-    print(model.add_tone_v2(text2))
+    print(model.add_tone(text2))

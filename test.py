@@ -23,10 +23,10 @@ for sent in data:
     else:
         for line in sent.split("\n"):
             line = line.strip()
-            y_p, y_p = 0, 0
+            y_t, y_p = 0, 0
             if line.strip():
                 try:
-                    y_p, y_t, out = model.add_tone_v2(line)
+                    y_p, y_t, out = model.add_tone(line)
                 except Exception as e:
                     print(line)
                     print(out)
