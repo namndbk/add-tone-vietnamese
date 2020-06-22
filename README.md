@@ -14,6 +14,11 @@ Vietnamese Add Accents
     $conda create --name myenv python=3.6
 ```
 
+- Để sử dụng môi trường ảo
+```
+    $conda activate myenv
+```
+
 - Cài các gói phụ thuộc
 ```
     $pip install -r requirements.txt
